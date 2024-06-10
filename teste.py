@@ -18,13 +18,13 @@ def carregar_livros():
 
 
 def carregar_capitulos(book_abbrev):
-    url = f"https://www.abibliadigital.com.br/api/books/{book_abbrev}"  # No "/chapters" in URL
+    url = f"https://www.abibliadigital.com.br/api/books/{book_abbrev}"  
     headers = {"Authorization": f"Bearer {api_key}"}
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
         book_data = response.json()
-        return book_data.get("chapters", 0)  # Get number of chapters directly from book data
+        return book_data.get("chapters", 0) 
     else:
         print(f"Error loading chapters for {book_abbrev}. Status code: {response.status_code}")
         return 0  
