@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 import requests
 
-api_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHIiOiJNb24gSnVuIDEwIDIwMjQgMTI6NDY6NDcgR01UKzAwMDAudGgueXVra3lAZ21haWwuY29tIiwiaWF0IjoxNzE4MDIzNjA3fQ.m7Xk0HqVbxqYR_Cj5iSeezj6MWXMiQ-YOcPOZkRvPPo"
+api_key = "SUA_API_AQUI"
 
 def carregar_livros():
     url = "https://www.abibliadigital.com.br/api/books"
